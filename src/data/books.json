@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Book1",
+        "price":20,
+        "category":"Math",
+        "description":"nice book"
+    },
+    {
+        "id":2,
+        "name":"Book2",
+        "price":25,
+        "category":"English",
+        "description":"good book"
+    },
+    {
+        "id":3,
+        "name":"Book3",
+        "price":35,
+        "category":"Physics",
+        "description":"wonderful book"
+    },
+    {
+        "id":4,
+        "name":"Book4",
+        "price":38,
+        "category":"Nature",
+        "description":"awesome book"
+    }
+]
