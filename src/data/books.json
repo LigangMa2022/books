@@ -1,30 +1,30 @@
 [
     {
-        "id":1,
+        "id":"1",
         "name":"Book1",
         "price":20,
         "category":"Math",
-        "description":"nice book"
+        "description":"This comprehensive math book is designed to help students learn the basics of algebra, geometry, and calculus. With clear and concise explanations, engaging examples, and plenty of practice problems, this book is perfect for students who want to improve their math skills."
     },
     {
-        "id":2,
+        "id":"2",
         "name":"Book2",
         "price":25,
         "category":"English",
-        "description":"good book"
+        "description":"The novel tells the story of a young woman who moves to a small town to escape her past. She soon finds herself drawn to a mysterious man who lives on the edge of town. As their relationship deepens, she begins to learn about his dark secrets and the danger that lurks in their small town."
     },
     {
-        "id":3,
+        "id":"3",
         "name":"Book3",
         "price":35,
         "category":"Physics",
-        "description":"wonderful book"
+        "description":"In this book, the author provides a clear and concise introduction to the fundamental principles of physics. Starting with the basics, he gradually builds up to more advanced topics, such as quantum mechanics and relativity. Throughout, he emphasizes the logical structure of the subject, and illustrates the physical concepts with numerous worked examples and exercises. This book is an ideal textbook for undergraduate students of physics, and is also a valuable resource for anyone who wants to brush up on their knowledge of the subject."
     },
     {
-        "id":4,
+        "id":"4",
         "name":"Book4",
         "price":38,
         "category":"Nature",
-        "description":"awesome book"
+        "description":"This book is a comprehensive guide to nature. It covers everything from the basics of ecology to the most complex interactions between plants and animals. With stunning photographs and engaging text, this book is a must-have for anyone who loves the outdoors."
     }
 ]
