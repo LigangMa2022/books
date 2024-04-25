@@ -34,35 +34,36 @@ function DetailPage (props){
             description:event.target.bookDescription.value
         };
         updateBook(updatedBookInfo);
+        alert("saved!");
     }
 
     return (
-        <section>
-            <h1>Book Detail Page</h1>
+        <section className="bookDetail">
+            <h1 className="bookDetail__title">Book Detail Page</h1>
             <form onSubmit={handleFormSubmit}
-                className="books__edit"
+                className="bookDetail__edit"
                 id="books__ToEdit"
                 name="books__ToEdit" >
                     <div>
                         <label htmlFor="bookName">Book Name: </label>
-                        <input type="text" name="bookName" className="books__edit--input" />
+                        <input type="text" name="bookName" className="bookDetail__edit--input" />
                     </div>
 
                     <div>
                         <label htmlFor="bookName">Book Category: </label>
-                        <input type="text" name="bookCategory" className="books__edit--input" />
+                        <input type="text" name="bookCategory" className="bookDetail__edit--input" />
                     </div>
 
                     <div>
                         <label htmlFor="bookPrice">Book Price: </label>
-                        <input type="text" name="bookPrice" className="books__edit--input" />
+                        <input type="text" name="bookPrice" className="bookDetail__edit--input" />
                     </div>
 
                     <div>
                         <label htmlFor="bookDescription">Book Description: </label>
-                        <textarea name="bookDescription" className="books__edit--input" />
+                        <textarea name="bookDescription" className="bookDetail__edit--inputText" />
                     </div>
-                    <button className="books__edit--button" type="submit">Save</button>
+                    <button className="bookDetail__edit--button" type="submit">Save</button>
             </form>
         </section>
     )

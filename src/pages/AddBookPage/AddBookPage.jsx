@@ -1,9 +1,7 @@
-import "./../AddBook/AddBook.scss";
-import books from "./../../data/books.json";
-import { useState } from "react";
+import "./AddBookPage.scss";
 
-function AddBook (){
-    const [bookList, setBookList] = useState(books)
+function AddBookPage (props){
+
     const handleAddSubmit = (event)=>{
         event.preventDefault();
         const newBook = {
@@ -12,9 +10,9 @@ function AddBook (){
             category: event.target.bookCategory.value,
             description: event.target.bookDescription.value
         };
-        let updatedBookList = [...books, newBook];
-        setBookList(updatedBookList);
-        console.log("bookList",bookList);
+        let updatedBookList = [...props.bookList, newBook];
+        props.setBookList(updatedBookList);
+        console.log("bookList",updatedBookList);
     }
     return (
         <section className="addbook">
@@ -35,4 +33,4 @@ function AddBook (){
         </section>
     )
 }
-export default AddBook;
+export default AddBookPage;

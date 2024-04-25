@@ -1,13 +1,19 @@
 .books {
     list-style: none;
     &__header {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
+        margin: 0 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     &__li{
+        padding: 1rem;
+        margin: 1rem;
         background-color: #bdc5d5;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     &__btn--del {
         border-radius: 1rem;
