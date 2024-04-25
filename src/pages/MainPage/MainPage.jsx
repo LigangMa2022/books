@@ -1,13 +1,11 @@
-import { useState } from "react";
-import books from "./../../data/books.json";
+
 import "./../MainPage/MainPage.scss";
 import { Link } from "react-router-dom";
-function MainPage (){
 
-    const [bookList, setBookList] = useState(books)
+function MainPage (props){
 
     const handleDelete = (id) => {
-        setBookList(bookList.filter((book)=>(book.id !== id)));
+        props.setBookList(props.bookList.filter((book)=>(book.id !== id)));
     };
 
     return (
@@ -21,7 +19,7 @@ function MainPage (){
 
             <ul className="books">
                 {
-                    bookList.map((book)=>{
+                    props.bookList.map((book)=>{
                         return (
                             <li className="books__li" key={book.id}>
                                 <Link to={`/books/${book.id}`} className="books__link">
